@@ -1,0 +1,27 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Escape Room"
+  page-footer: "Copyright 2024, Dave Brocker" 
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - about.qmd
+
+format:
+  html:
+    theme: 
+      light: [flatly, theme-light.scss.css]
+      dark: [darkly, theme-dark.scss.css]
+    css: styles.css
+    lightbox: true
+    toc: true
+    code-fold: true
+    code-link: true
+    code-tools: true
+
+editor: visual
+
